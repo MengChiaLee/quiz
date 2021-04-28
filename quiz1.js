@@ -1,10 +1,3 @@
-function change() {     
-    var header = document.getElementById("aa");     
-        header.innerHTML = "CSIE@CGU";     
-    var para = document.getElementById("zz");     
-        para.innerHTML = "怎麼那麼棒！！.";   
-}
-
 function myFunction(){
     var btn = document.createElement("BUTTON");
         btn.innerHTML = "Change this document";
@@ -18,4 +11,4 @@ function change() {
         header.innerHTML = "CSIE@CGU";     
     var para = document.getElementById("zz");     
         para.innerHTML = "怎麼那麼棒！！.";   
-} 
+}
