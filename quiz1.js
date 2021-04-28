@@ -1,12 +1,14 @@
-function change() {
-    $("#hid123").html("CSIE@CGU");
-    $("#pid123").html("怎麼那麼棒")
+function change() {     
+    var header = document.getElementById("aa");     
+        header.innerHTML = "CSIE@CGU";     
+    var para = document.getElementById("zz");     
+        para.innerHTML = "怎麼那麼棒！！.";   
 }
-
-function new_button() {
-    var btn="<button id='change'>Change this document</button>";
-    $("body").append(btn);
-    $("#change").click(change);
+function myFunction(){
+    var btn = document.createElement("BUTTON");
+        btn.innerHTML = "Change this document";
+        document.body.appendChild(btn)
+        btn.addEventListener("click",change);
+            ///也可以寫 document.body.appendChild(btn).addEventListener("click",change)
+            ///# Listener by myFunction click  to do function change.
 }
-$("#btn").click(new_button);
-© 2021 GitHub, Inc.
